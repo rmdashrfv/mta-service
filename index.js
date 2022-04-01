@@ -17,6 +17,7 @@ const getAllStations = async () => {
 }
 
 const displayArrivalTimes = (arrivalTimes) => {
+  arrivalTimesScreen.innerHTML = ''
   arrivalTimes.forEach((element) => {
     let h4 = document.createElement('h4')
     h4.innerText = element
